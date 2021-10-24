@@ -1,0 +1,83 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #a683e3 50%, #e4e9fd 50%);
+  font-family: "helvetica neue";
+  min-height: 100vh;
+  padding: 5rem 40rem;
+}
+.home-date {
+  color: white;
+  background: #a683e3;
+  width: max-content;
+  padding: 2rem 4rem;
+  font-weight: 700;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 5rem !important;
+  font-size: 20rem !important;
+}
+.home-actions {
+  margin: 5rem auto 2rem;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+.iconAdd {
+  color: greenyellow;
+  font-size: 3rem;
+  width: 100%;
+  margin-left: auto;
+  text-align: right;
+  position: relative;
+}
+
+.iconAdd .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 1.6rem;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.iconAdd:hover .tooltiptext {
+  visibility: visible;
+}
+.home-content {
+  min-height: 70vh;
+}
+footer {
+  margin: 3rem 0 1rem;
+  width: 100%;
+  text-align: center;
+}
+/* tab screen 900px */
+@media (max-width: 56.25em) {
+  .home {
+    padding: 5rem 10rem;
+  }
+}
+
+/* phone screen 600px */
+@media (max-width: 37.5em) {
+  .home {
+    padding: 2rem 5rem;
+  }
+}

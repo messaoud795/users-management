@@ -1,0 +1,36 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 2rem;
+  background-color: white;
+  font-size: 1.6rem;
+}
+
+.user:last-child {
+  border-bottom: 0;
+}
+.user:hover {
+  transform: scale(1.05) translateY(-2px);
+  cursor: pointer;
+}
+
+.user-name {
+  font-weight: 700;
+  color: rgb(162, 235, 28);
+  font-size: 2rem;
+}
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.user__operations {
+  display: none;
+}
+
+.user:hover .user__operations {
+  display: inline-flex;
+  display: flex;
+  justify-content: flex-end;
+}
